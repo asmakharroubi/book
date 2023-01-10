@@ -1,0 +1,132 @@
+.book-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  height: 550px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #ddd;
+  transition: all 0.5s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.book-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #ddd;
+}
+
+.book-cover {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.book-title {
+  margin: 30px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+}
+.book-card .read-button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.book-card .read-button.Done {
+  background-color: green;
+}
+
+.book-card .read-button:hover {
+  background-color: lightgray;
+  color: red;
+}
+.book-card .read-button.Done:hover {
+  background-color: lightgray;
+  color: green;
+}
+
+.book-card .read-button:active {
+  transform: translateY(2px);
+}
+
+.editbtn {
+  border: 2px solid #d2bdff;
+  height: 40px;
+  width: 150px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  background: #1b191f;
+}
+
+.editbtn::after {
+  content: "Change This Book";
+  /* top: 41%;
+  left: 50%; */
+  transform: translate(-50%);
+  color: #d2bdff;
+  transition: all 0.1s linear;
+}
+
+.editbtn::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: #d2bdff;
+  box-shadow: 0px 0px 10px 3px #0ff;
+  margin-left: -8px;
+  margin-top: -8px;
+  opacity: 0;
+  transition: all 0.1s linear;
+  border-radius: 100%;
+  animation: star 1.3s linear infinite;
+}
+
+/* .editbtn:hover::before {
+  opacity: 1;
+  animation: star 1.3s linear infinite;
+} */
+
+.editbtn:hover::after {
+  content: "Change It Now";
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #82bedc, 0 0 30px #82bedc,
+    0 0 40px #82bedc, 0 0 50px #82bedc, 0 0 60px #82bedc;
+}
+
+.themed-modal {
+  /* background-image: url('https://www.your-image-url.com/image.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.themed-modal .modal-header {
+  color: white;
+  background: linear-gradient(to right, #312d38, #585360);
+}
+.themed-modal .modal.Body {
+  display: flex;
+}
+
+.themed-modal .modal-content {
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+.themed-modal .modal-footer .btn {
+  background-color: #312d38;
+}

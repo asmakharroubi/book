@@ -1,0 +1,23 @@
+.addmodal {
+  display: flex;
+  flex-direction: column;
+}
+
+.addcontainer {
+  background: #1b191f;
+}
+
+.addcontainer {
+  /* background-image: url('https://cdn.discordapp.com/attachments/1008571029804810332/1061915228469727262/Fedi_a_background_containing_book_high_resolution_bd8e77ff-ff2d-4165-a1be-89fdfb05baf0.png'); */
+  background-size: cover;
+  background-position: center;
+}
+.addcontainer .modal-header {
+  color: rgb(0, 0, 0);
+}
+.addcontainer .modal-content {
+  border-radius: 25px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     font-family: 'Montserrat', sans-serif;
+
+}
